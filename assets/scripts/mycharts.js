@@ -9,15 +9,15 @@ P_dict = {'INTJ':['Analista','Arquiteto'],
 'ENFJ':['Diplomata','Protagonista'],
 'ENFP':['Diplomata','Ativista'],
 
-'ISTJ':['Sentinelas','Logístico'],
-'ISFJ':['Sentinelas','Defensor'],
-'ESTJ':['Sentinelas','Executivo'],
-'ESFJ':['Sentinelas','Cônsul'],
+'ISTJ':['Sentinela','Logístico'],
+'ISFJ':['Sentinela','Defensor'],
+'ESTJ':['Sentinela','Executivo'],
+'ESFJ':['Sentinela','Cônsul'],
 
-'ISTP':['Exploradores','Virtuoso'],
-'ISFP':['Exploradores','Aventureiro'],
-'ESTP':['Exploradores','Empresário'],
-'ESFP':['Exploradores','Animador']
+'ISTP':['Explorador','Virtuoso'],
+'ISFP':['Explorador','Aventureiro'],
+'ESTP':['Explorador','Empresário'],
+'ESFP':['Explorador','Animador']
 }
 
 
@@ -134,7 +134,7 @@ document.getElementById("pb02").style="width: "+p2+"%;";
 document.getElementById("pb03").style="width: "+p3+"%;";
 document.getElementById("pb04").style="width: "+p4+"%;";
 function return_csv(){
-    return "Id, Name, Personality,P01,P02,P03,P04,0,Bessa,INTP,0,0,0,1,1,Gugão,INTJ,0,0,0,0,2,Simons,ISFP,0,1,1,1,3,Bruna,ESFJ,1,1,1,0,4,Clara,ESFP,1,1,1,1,5,Amanda,INFP,0,0,1,1,6,Tucão,ISFJ,0,1,1,0,7,Gui,ENFP,1,0,1,1,8,Chomp,INTJ,0,0,0,0,9,Gutão,ESFP,1,1,1,1,10,Duarte,ISTJ,0,1,0,0,11,Cardoso,INFP,0,0,1,1,12,Marcelo,INFP,0,0,1,1";
+    return "Id, Name, Personality,P01,P02,P03,P04,0,Bessa,INTP,0,0,0,1,1,Gugão,INTJ,0,0,0,0,2,Simons,ISFP,0,1,1,1,3,Bruna,ESFJ,1,1,1,0,4,Clara,ESFP,1,1,1,1,5,Amanda,INFP,0,0,1,1,6,Tucão,ISFJ,0,1,1,0,7,Gui,ENFP,1,0,1,1,8,Chomp,INTJ,0,0,0,0,9,Gutão,ESFP,1,1,1,1,10,Duarte,ISTJ,0,1,0,0,11,Cardoso,INFP,0,0,1,1,12,Marcelo,INFP,0,0,1,1,13,Rol,ISTJ,0,1,0,0,14,Liana,ISFJ,0,1,1,0";
 
 }
 
@@ -209,8 +209,8 @@ function mount_people_row(id,dataRow,row){
 //"badge badge-alternate" -> roxo -> analista
   badge_dict  ={ 'Analista' : "badge badge-alternate" , 
   'Diplomata' : "badge badge-success",
-   'Sentinelas' : "badge badge-primary",
-    'Exploradores' : "badge badge-warning"}  
+   'Sentinela' : "badge badge-primary",
+    'Explorador' : "badge badge-warning"}  
 
   //Cell4
   var cell4 = row.insertCell(3);
